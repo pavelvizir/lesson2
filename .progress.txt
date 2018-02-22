@@ -15,3 +15,4 @@ git add .
 git commit -m "Task #1 completed. File: if_statement_1_age.py"
 head -1 if_statement_1_age.py > if_statement_2_string_compare.py
 ...
+echo -e "bot_token.py\nbot.log" >> .gitignore
