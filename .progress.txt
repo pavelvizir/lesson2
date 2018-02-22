@@ -1,0 +1,11 @@
+```create repo lesson2 on github with 'Initialize' option.
+mkdir -p ~/projects/lesson2
+cd ~/projects/lesson2
+git clone https://github.com/pavelvizir/lesson2 .
+python3.5 -m venv .venv
+source .venv/bin/activate
+echo .venv > .gitignore
+echo .swp >> .gitignore
+git add .
+git commit -m "Initial commit. .gitignore creation"
+
