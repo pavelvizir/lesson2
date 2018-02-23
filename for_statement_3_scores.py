@@ -38,8 +38,8 @@ SCHOOL_CLASSES_SCORES = [
     },
 ]
 
-# Nested list comprehension ниже кажется магическим.
-# Есть ли какое-нибудь разъяснение для чайников?
+# Общий бал для школы созданием списка в цикле ниже
+#  показался совсе некрасивым. Переделал.
 print('Средний балл по школе: ' + str(
     mean([
         score for school_class in SCHOOL_CLASSES_SCORES
