@@ -7,15 +7,20 @@
      школе, ВУЗе или работать.
     Вывести занятие на экран.
 '''
-# PEP8, global constants should be upper case.
-USER_AGE = int(input('Введите возраст: '))
-COMMON_STRING = 'Ты должен быть '
 
-if USER_AGE < 7:
-    print(COMMON_STRING + 'в детском саду.')
-elif USER_AGE < 18:
-    print(COMMON_STRING + 'в школе.')
-elif USER_AGE < 24:
-    print(COMMON_STRING + 'в ВУЗе.')
-else:
-    print(COMMON_STRING + 'на работе.')
+
+def age_tell_what_to_do():
+    user_age = int(input('Введите возраст: '))
+    common_string = 'Ты должен быть '
+
+    if user_age < 7:
+        print(common_string + 'в детском саду.')
+    elif user_age < 18:
+        print(common_string + 'в школе.')
+    elif user_age < 24:
+        print(common_string + 'в ВУЗе.')
+    else:
+        print(common_string + 'на работе.')
+
+
+age_tell_what_to_do()
