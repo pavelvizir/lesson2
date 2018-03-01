@@ -40,11 +40,23 @@ def ask_user():
     ''' Ask until get desired result. '''
 
     while True:
-        if str(input("Как дела? ")) == "Хорошо":
+        question = input("Скажи что-нибудь\n")
+        if question == "Пока!":
+            print('До встречи!')
             break
+        else:
+            print(get_answer(question, answers))
 
-
-ask_user()
 
 # Последнее задание про get_answer() не понял
 # кто у кого что спрашивает и какой ответ выдавать...
+
+answers = {"привет": "И тебе привет!",
+           "как дела": "Лучше всех!",
+           "пока": "Увидимся."}
+
+
+def get_answer(question, answers):
+    return answers.get(question.lower(), "Не могу ответить :-(")
+
+ask_user()
