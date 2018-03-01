@@ -7,7 +7,14 @@
 
 '''
 
-STRING = str(input('Введите строку: '))
 
-for letter in list(STRING):
-    print(letter)
+def vertical_string():
+    ''' obvious doc_string '''
+
+    string = input('Введите строку: ')
+
+    for letter in string:
+        print(letter)
+
+
+vertical_string()
