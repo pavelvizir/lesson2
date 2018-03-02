@@ -10,19 +10,19 @@
 '''
 
 
-def compare_two_strings(string_1, string_2):
+def compare_two_strings(string1, string2):
     ''' Obvious doc_string. '''
 
-    if string_1 == string_2:
+    if string1 == string2:
         return 1
-    elif len(string_1) > len(string_2):
+    elif len(string1) > len(string2):
         return 2
-    elif string_2 == 'learn':
+    elif string2 == 'learn':
         return 3
 
     return 4  # Не хочется иметь что-то необработанное
 
 
-STRING_1 = str(input('Введите первую строку: '))
-STRING_2 = str(input('Введите вторую строку: '))
-print(compare_two_strings(STRING_1, STRING_2))
+string_1 = str(input('Введите первую строку: '))
+string_2 = str(input('Введите вторую строку: '))
+print(compare_two_strings(string_1, string_2))
